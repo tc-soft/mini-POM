@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1>Kurs Reacta - Tydzień 2</h1>
+    <hr>
+    <div class="App">
+
+        <div class="TimeboxEditor inactive">
+            <label>Co robisz ?<input disabled value="Uczę się skrótów klawiszowych" type="text"></label><br>
+            <label>Ile minut ?<input disabled value="25" type="number"></label><br>
+            <button disabled>Zacznij</button>
+        </div>
+
+        <div class="Timebox">
+            <h1>Ucze się skrótów klawiszowych</h1>
+            <h2>Pozostało 13:28</h2>
+
+            <div class="ProgressBar">
+                <div style="width: 45%"></div>
+            </div>
+
+            <button disabled>Start</button>
+            <button>Stop</button>
+            <button>Pause</button>
+            
+            Liczba przerw: 2
+        </div>
+    </div>
+
 </body>
+
 </html>
