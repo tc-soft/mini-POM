@@ -1,11 +1,14 @@
-function Clock (props) {
-    return <h2 className="Clock">Pozostało {props.minutes}</h2>
+function Clock ({minutes = 20, seconds = 48}) {
+    return <h2 className="Clock">Pozostało {minutes}:{seconds}</h2>
+}
+
+function ProgressBar ({percent = 50}) {
+    return (
+    <div className="ProgressBar">
+        <div style={{width: `${percent}%`}}></div>
+    </div>
+    );
 }
 
 
-const rootElement = document.getElementById("root");
-const element = (< Clock minutes="17:32" />);
-
-
-
-ReactDOM.render(element, rootElement);
+ReactDOM.render(<div>< Clock /><ProgressBar /></div>, document.getElementById("root"));
